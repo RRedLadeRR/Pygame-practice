@@ -34,3 +34,4 @@ while True:
             sys.exit()
 
     pg.display.flip()
+

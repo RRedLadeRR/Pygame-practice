@@ -6,8 +6,8 @@ from time import sleep
 W = 64
 H = 64
 
-W2 = 110
-H2 = 57.8
+W2 = 220
+H2 = 115.6
 
 pg.init()
 
@@ -21,7 +21,7 @@ player = pg.transform.scale(pg.image.load("Pygame-practice/images/Cristiano-Rona
 
 # Позиції
 ball_rect = ball.get_rect(topleft=(random.randint(0, 750), 0))
-player_rect = player.get_rect(midbottom=(400, 590))
+player_rect = player.get_rect(midbottom=(640, 720))
 
 # Швидкість руху
 ball_speed = 0.5
@@ -61,7 +61,7 @@ while True:
     # Завершення гри після 3 пропусків
     if misses >= 3:
         print("You Lose!")
-        sleep(3)
+        sleep(1)
         sys.exit()
 
     screen.blit(ball, ball_rect)
