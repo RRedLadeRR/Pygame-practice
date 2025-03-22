@@ -11,7 +11,7 @@ screen = pygame.display.set_mode((1280, 720))
 pygame.display.set_caption("Бічна стрілянина")
 
 # Параметри корабля
-ship = pygame.transform.scale(pygame.image.load("Pygame-practice/images/x-wing.png"), (W, H))
+ship = pygame.transform.scale(pygame.image.load("images/x-wing.png"), (W, H))
 ship_rect = ship.get_rect()
 ship_rect.midleft = screen.get_rect().midleft
 
